@@ -4,7 +4,7 @@ function Home() {
   return (
     <div>         
       <div className="content rounded m-3 pb-4">
-        <h2>Content</h2>
+        <h2 className='pt-3 mb-3'>Content</h2>
         <div className='d-flex justify-content-around'>
             <div className='border c1 rounded w-25 pb-3'>
                 <h4>eBooks</h4>
@@ -22,7 +22,7 @@ function Home() {
       </div>
       {/* domains */}
       <div className="content rounded m-3 pb-4">
-        <h2>Domains</h2>
+        <h2 className='pt-3 mb-3'>Domains</h2>
         <div className='d-flex justify-content-around'>
             <div className='border c1 rounded w-25 pb-3'>
                 <h4>Artificial Intelligence</h4>
@@ -40,7 +40,7 @@ function Home() {
       </div>
       {/* useful links */}
       <div className="content rounded m-3 pb-4">
-        <h2>Useful Links</h2>
+        <h2 className='pt-3 mb-3'>Useful Links</h2>
         <div className='d-flex justify-content-around'>
             <div className='border c1 rounded w-25 pb-3 pt-2'>
                 <h4>Research papers</h4>
