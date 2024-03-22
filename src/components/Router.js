@@ -1,5 +1,9 @@
 import React from 'react'
 import { createBrowserRouter, RouterProvider } from "react-router-dom"
+import Home from './home/Home'
+import Root from './Root'
+import Login from "./login-register/Login"
+import Register from "./login-register/Register"
 function Router() {
     let router = createBrowserRouter([
         {
@@ -11,49 +15,19 @@ function Router() {
                     element: <Home />
                 },
                 {
-                    path: "/contactus",
-                    element: <Contactus />
-                },
-                {
                     path: "login",
                     element: <Login />,
-                    children: [
-                        {
-                            path: "donar",
-                            element: <DonarLogin />
-                        },
-                        {
-                            path: "volunteer",
-                            element: <VolunteerLogin />
-                        },
-                        {
-                            path: 'admin',
-                            element: <AdminLogin />
-                        }
-                    ]
                 },
                 {
                     path: "register",
                     element: <Register />,
                 },
-                {
-                    path: "donar-register",
-                    element: <DonarRegister />
-                },
-                {
-                    path: "volunteer-register",
-                    element: <VolunteerRegister />
-                },
-                {
-                    path: "donar-dashboard/:username",
-                    element: <DonarDashboard />
-                }
             ]
         }
     ])
     return (
         <div>
-
+            <RouterProvider router={router} />
         </div>
     )
 }
