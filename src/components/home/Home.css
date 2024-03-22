@@ -1,0 +1,22 @@
+.content{
+    background-color: whitesmoke;
+}
+.c1{
+    background-color: white;
+}
+
+.c2{
+    background-color: white;
+}
+
+.c3{
+    background-color: white;
+}
+.border:hover{
+    box-shadow: 10px 5px 5px gray;
+}
+
+.img-c{
+    height: 130px;
+    width: 100px;
+}
